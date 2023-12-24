@@ -171,7 +171,7 @@ nav button#menuButton{
 
 .skills .skills-items .item{
     background-color: #fff;
-    width: calc(100%/3);
+    width: calc(100%/4);
     border-radius: 10px;
     padding: 30px;
     border-bottom: 4px solid transparent;
