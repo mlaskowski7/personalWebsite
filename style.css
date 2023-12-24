@@ -7,7 +7,8 @@ html{
 
 body{
     font-family: Nunito, sans-serif;
-    background-color: rgb(32, 32, 32);
+    background-color: whitesmoke;
+    color: black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,13 +27,13 @@ nav{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
     transition: color 0.3s ease;
 
 }
 
 a:hover{
-    color: rgb(63, 63, 170);
+    color: rgb(44, 168, 44);
 }
 
 h5{
@@ -45,6 +46,7 @@ li{
 
 nav{
     position: sticky;
+    background-color: white;
     top: 0;
     padding: 0 85px;
     display: flex;
@@ -73,11 +75,11 @@ footer .top ul{
 }
 
 nav button{
-    color: silver;
+    color: rgb(44, 168, 44);
     background-color: transparent;
     padding: 12px 17px;
     border-radius: 5px;
-    border: 1px solid silver;
+    border: 1px solid rgb(44, 168, 44);
     cursor: pointer;
     transition: all 0.3s ease;
 
@@ -85,15 +87,103 @@ nav button{
 }
 
 nav button:hover{
-    background-color: rgb(63, 63, 170);
-    border-color: rgb(63, 63, 170);
+    background-color: rgb(44, 168, 44);
+    border-color: rgb(44, 168, 44);
     color: white;
 }
 
 nav button#menuButton{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     font-size: 22px;
     padding: 12px;
+}
+
+.home{
+    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(211, 209, 209);
+}
+
+.home .left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.home .left h3{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 46px;
+
+}
+
+.home .left h3 span{
+    color: rgb(44, 168, 44);
+}
+
+.home .left p{
+    color: rgb(44, 168, 44);
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.home .left button{
+    margin-top: 40px;
+    background-color: rgb(22, 82, 22);
+    color: #fff;
+    cursor: pointer;
+    padding: 14px 25px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.home .right img{
+    width: 500px;
+    border: none;
+    background-color: rgb(211, 209, 209);
+    color: rgb(22, 82, 22);
+
+}
+
+.skills{
+    padding: 110px 85px 0;
+    margin-bottom: 900px;
+    
+
+}
+
+.skills h3,
+.about .right h3,
+.projects .header h3{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.skills .skills-items{
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.skills .skills-items .item{
+    background-color: #fff;
+    width: calc(100%/3);
+    border-radius: 10px;
+    padding: 30px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: al 0.3s ease;
+}
+
+.skills .skills-items .item:hover{
+    border-bottom: 4px solid rgb(44, 168, 44);
+}
+
+.skills .skills-items .item .icon i{
+    color: rgb(22, 82, 22);
+    font-size: 24px;
 }
