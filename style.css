@@ -488,8 +488,8 @@ footer .bottom .contact a{
 
     nav button#menuButton{
         display: flex;
-        font-size: 15px;
-        padding: 9px;
+        font-size: 12px;
+        padding: 5px;
     }
 
     nav.open{
