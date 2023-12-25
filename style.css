@@ -492,6 +492,7 @@ footer .bottom .contact a{
     
     nav ul li a{
         font-size: 10px;
+        padding: 0;
     }
 
     nav .logo-container a{
