@@ -485,9 +485,13 @@ footer .bottom .contact a{
 }
 
 @media  screen and (max-width:580px) {
+
+    nav.open{
+        margin-left: 0;
+    }
     
     nav ul li a{
-        font-size: 13px;
+        font-size: 10px;
     }
 
     nav .logo-container a{
