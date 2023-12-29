@@ -139,6 +139,15 @@ nav button#menuButton{
     padding: 14px 25px;
     border: 1px solid transparent;
     border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.home .left button:hover{
+    border: 1px solid rgb(22, 82, 22);
+    color: rgb(22, 82, 22);
+    background-color: rgb(211, 209, 209);
+
 }
 
 .home .right img{
@@ -151,13 +160,10 @@ nav button#menuButton{
 
 .skills{
     padding: 110px 85px 0;
-    margin-bottom: 900px;
-    
-
 }
 
 .skills h3,
-.about .right h3,
+.aboutme .right h3,
 .projects .header h3{
     font-size: 40px;
     margin-top: 20px;
@@ -176,7 +182,7 @@ nav button#menuButton{
     padding: 30px;
     border-bottom: 4px solid transparent;
     cursor: pointer;
-    transition: al 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .skills .skills-items .item:hover{
@@ -186,4 +192,350 @@ nav button#menuButton{
 .skills .skills-items .item .icon i{
     color: rgb(22, 82, 22);
     font-size: 24px;
+}
+
+.skills .skills-items .item h4,
+.projects .projects-items .item .info h4{
+    font-size: 18px;
+}
+
+.skills .skills-items .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.aboutme{
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.aboutme .left img{
+    width: 440px;
+}
+
+.aboutme .right p{
+    font-size: 16px;
+    margin-top: 30px;
+}
+.aboutme .right p:last-of-type{
+    color: rgb(44, 168, 44);
+}
+
+.projects{
+    padding: 110px 90px;
+}
+
+.projects .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.projects .header button{
+    background-color: rgb(22, 82, 22);
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.projects .header button:hover{
+    background-color: whitesmoke;
+    color: rgb(22, 82, 22);
+    border: 1px solid rgb(22, 82, 22);
+}
+
+.projects .header button i{
+    font-size: 24px;
+}
+
+
+.projects .projects-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects .projects-items .item{
+    width: 30%;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.projects .projects-items .item:hover{
+    border-color:rgb(44, 168, 44) ;
+
+}
+
+.projects .projects-items .item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.projects .projects-items .item .info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 35px 45px;
+}
+
+.projects .projects-items .item .info p{
+    font-size: 13px;
+}
+
+
+.projects .projects-items .item .info a i{
+    margin-right: 3px;
+    font-size: 20px;
+}
+
+footer{
+    background-color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .top, footer .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer .top .social-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+footer .separator{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 30px 0 20px;
+}
+
+footer .bottom p{
+    font-size: 12px;
+}
+
+footer .bottom .contact a{
+    font-size: 12px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 1200px){
+    .home .left h5{
+        font-size: 18px;
+    }
+
+    .home .left h3{
+        font-size: 36px;
+    }
+
+    .home .left p{
+        font-size: 18px;
+    }
+
+    .home .right .img{
+        width: 380px;
+    }
+
+    .skills .skills-items{
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .skills .skills-items .item{
+        width: 40%;
+    }
+
+    .aboutme .left img{
+        width: 370px;
+    }
+
+    .skills h3,
+    .aboutme .right h3,
+    .projects .header h3{
+        font-size: 32px;
+    }
+
+    .aboutme .right p{
+        font-size: 15px;
+    }
+
+    footer .top ul{
+        gap: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:995px){
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .aboutme{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .projects .projects-items{
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projects .projects-items .item{
+        width: 48%;
+    }
+
+    footer .top ul{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:770px){
+    nav{
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav.open .logo-container{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+        margin-right: 10px;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+    .home{
+        padding: 40px;
+    }
+
+    .skills{
+        padding: 85px 40px 0;
+    }
+
+    .skills .skills-items{
+        gap: 8px;
+    }
+
+    .aboutme{
+        padding: 85px 42px;
+    }
+
+    .projects{
+        padding: 60px 40px;
+    }
+
+    .projects .projects-items{
+        gap: 18px;
+    }
+
+    footer{
+        padding: 85px 20px;
+    }
+
+    footer .bottom{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    
+}
+
+@media  screen and (max-width:580px) {
+
+    nav button#menuButton{
+        display: flex;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    nav.open{
+        margin-left: 0;
+    }
+    
+    nav ul li a{
+        font-size: 10px;
+        padding: 0;
+    }
+
+    nav .logo-container a{
+        font-size: 18px;
+    }
+
+    .home .right img{
+        width: 90%;
+    }
+
+    .home .left h3{
+        font-size: 32px;
+    }
+
+    .home .left p{
+        font-size: 16px;
+    }
+
+    .home .left button{
+        width: 100%;
+    }
+
+    .skills .skills-items .item{
+        width: 100%;
+    }
+
+    .projects .projects-items .item{
+        width: 80%;
+    }
+
+    .projects .header button{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+
+
+
 }
