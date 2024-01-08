@@ -263,16 +263,18 @@ nav button#menuButton{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .projects .projects-items .item{
-    width: 18%;
+    width: 32%;
     background-color: white;
     border-radius: 10px;
     border-bottom: 4px solid transparent;
     box-shadow: 0 5px 32px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
+
 
 .projects .projects-items .item:hover{
     border-color:rgb(44, 168, 44) ;
