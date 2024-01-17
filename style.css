@@ -274,6 +274,10 @@ nav button#menuButton{
     transition: all 0.3s ease;
 }
 
+.projects .projects-items.projects-second .item{
+    width: 24%;
+}
+
 
 .projects .projects-items .item:hover{
     border-color:rgb(44, 168, 44) ;
