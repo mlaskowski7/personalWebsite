@@ -531,7 +531,10 @@ footer .bottom .contact a{
     }
 
     .projects .projects-items .item{
-        width: 80%;
+        width: 90%;
+    }
+    .projects .projects-items.projects-second .item{
+        width: 90%;
     }
 
     .projects .header button{
